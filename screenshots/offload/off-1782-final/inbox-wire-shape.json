@@ -1,0 +1,35 @@
+[
+  {
+    "id": "0db63b92-09d2-4da9-a746-fc5d3e6dec1c",
+    "scopeKind": "Project",
+    "subjectType": "Project",
+    "roleId": "carrier",
+    "shareRole": "carrier",
+    "cascadeToDescendants": true,
+    "descendantLoadCount": 6,
+    "subjectDescription": "P-1-1: Williamson - Moen's most advanced Bacon technology increases dependent capabilities",
+    "status": "accepted"
+  },
+  {
+    "id": "e7c35a21-60c1-4368-9a88-8f59aad81472",
+    "scopeKind": "Project.Load",
+    "subjectType": "Project.Load",
+    "roleId": "carrier",
+    "shareRole": "carrier",
+    "cascadeToDescendants": false,
+    "descendantLoadCount": null,
+    "subjectDescription": null,
+    "status": "pending"
+  },
+  {
+    "id": "9616b693-7549-4bb4-a362-7c278495d190",
+    "scopeKind": "Project.Load",
+    "subjectType": "Project.Load",
+    "roleId": "carrier",
+    "shareRole": "carrier",
+    "cascadeToDescendants": false,
+    "descendantLoadCount": null,
+    "subjectDescription": null,
+    "status": "accepted"
+  }
+]
