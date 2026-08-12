@@ -1,0 +1,30 @@
+OFF-2984 — diff-baseline contamination: before/after proof
+Fixture: applied v1 (weight=100/A), rejected|pending v2 (weight=200/B), applied v3 (weight=300/C)
+Assertion: v3's PERSISTED diff (what the pending-change card + history timeline render) must read before=100 (A), never 200 (B).
+
+================ BEFORE (loadAggregate replays ALL states — the bug) ================
+    ✕ a rejected event does not become the baseline of a later event (A=100, rejected B=200, C=300 → before reads 100) (175 ms)
+    ✕ a still-pending event does not alter the baseline of a later committed event (96 ms)
+    ✓ getEvents(states) filters the log at the SQL layer (89 ms)
+  ● Event diff baseline excludes non-committed events (OFF-2984, integration) › a rejected event does not become the baseline of a later event (A=100, rejected B=200, C=300 → before reads 100)
+    Expected: 100
+    Received: 200
+  ● Event diff baseline excludes non-committed events (OFF-2984, integration) › a still-pending event does not alter the baseline of a later committed event
+    Expected: 100
+    Received: 200
+Tests:       2 failed, 1 passed, 3 total
+
+  Rendered diff payload BEFORE fix:  [{ field: 'weight', group: 'LoadBasics', before: 200, after: 300 }]   <- rejected/pending B leaked as committed prior state
+
+================ AFTER (loadAggregate passes COMMITTED_STATES=['set','applied']) ================
+    ✓ a rejected event does not become the baseline of a later event (A=100, rejected B=200, C=300 → before reads 100) (159 ms)
+    ✓ a still-pending event does not alter the baseline of a later committed event (81 ms)
+    ✓ getEvents(states) filters the log at the SQL layer (85 ms)
+Tests:       3 passed, 3 total
+
+  Rendered diff payload AFTER fix:   [{ field: 'weight', group: 'LoadBasics', before: 100, after: 300 }]   <- A, the last committed value
+
+================ Impacted integration gate (non-deferrable): event-store __integration__ ================
+Test Suites: 21 passed, 21 total
+Tests:       129 passed, 129 total
+ NX   Successfully ran target test:integration for project server
