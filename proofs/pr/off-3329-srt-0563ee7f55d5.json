@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "checks": {
+    "direct_ipv4": true,
+    "direct_ipv6": true,
+    "other_loopback": true,
+    "unix_socket": true,
+    "portkey_denied": true,
+    "bedrock_denied": true,
+    "unknown_denied": true,
+    "hostname_suffix_denied": true,
+    "proxy_ip_denied": true,
+    "approved_host_wrong_port_denied": true,
+    "proxy_auth_required": true,
+    "socks_unknown_denied": true,
+    "child_direct_denied": true
+  },
+  "model_requests": 0,
+  "allowed_domain_requests": 0,
+  "scope": "OS direct egress and official proxy domain rejection; not auth or inference",
+  "source_commit": "991265e137b103a2ba21678ac110c9dac8ad8ab5",
+  "srt_version": "0.0.76",
+  "check": "eval/test/test_local_harness_sdk_launcher.py::test_actual_official_srt_proxies_and_os_boundary"
+}
