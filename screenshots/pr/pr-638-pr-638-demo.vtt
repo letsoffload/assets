@@ -1,0 +1,82 @@
+WEBVTT
+
+00:00:00.100 --> 00:00:04.041 line:72% position:50% align:center size:90%
+Agent onboarding of a past permit,
+before and after the engine fix.
+
+00:00:04.933 --> 00:00:07.463 line:72% position:50% align:center size:90%
+Open Routing and Permits
+on the first load.
+
+00:00:07.965 --> 00:00:11.024 line:72% position:50% align:center size:90%
+The automation principal
+confirmed this Pennsylvania
+
+00:00:11.104 --> 00:00:14.280 line:72% position:50% align:center size:90%
+permit on November eighth
+as a forty three mile route.
+
+00:00:14.777 --> 00:00:17.718 line:72% position:50% align:center size:90%
+The whole trip is three
+hundred thirty five miles.
+
+00:00:18.283 --> 00:00:19.636 line:72% position:50% align:center size:90%
+Open the review screen.
+
+00:00:20.276 --> 00:00:22.394 line:72% position:50% align:center size:90%
+The route starts at exit nineteen A,
+
+00:00:22.720 --> 00:00:25.897 line:72% position:50% align:center size:90%
+where Interstate eighty meets
+Interstate seventy nine.
+
+00:00:26.046 --> 00:00:29.222 line:72% position:50% align:center size:90%
+The origin at the New Jersey
+line was never delivered.
+
+00:00:29.832 --> 00:00:32.361 line:72% position:50% align:center size:90%
+The line runs down
+Interstate seventy nine,
+
+00:00:32.595 --> 00:00:36.460 line:72% position:50% align:center size:90%
+then west on US four twenty
+two past New Castle to Ohio.
+
+00:00:37.381 --> 00:00:40.028 line:72% position:50% align:center size:90%
+Now open the same permit
+on the fixed engine.
+
+00:00:40.480 --> 00:00:44.833 line:72% position:50% align:center size:90%
+The same permit was digitized again
+on the fixed engine on November tenth.
+
+00:00:45.187 --> 00:00:48.893 line:72% position:50% align:center size:90%
+It confirms at three hundred
+thirty three point six five miles,
+
+00:00:49.032 --> 00:00:50.385 line:72% position:50% align:center size:90%
+across the whole state.
+
+00:00:51.036 --> 00:00:52.389 line:72% position:50% align:center size:90%
+Open its review screen.
+
+00:00:53.012 --> 00:00:55.247 line:72% position:50% align:center size:90%
+The route now starts at the New Jersey
+
+00:00:55.327 --> 00:00:57.857 line:72% position:50% align:center size:90%
+state line and ends at
+the Ohio state line.
+
+00:00:58.448 --> 00:01:00.801 line:72% position:50% align:center size:90%
+Every step is confirmed with the permit.
+
+00:01:01.356 --> 00:01:02.556 line:72% position:50% align:center size:90%
+On the server side,
+
+00:01:02.636 --> 00:01:06.930 line:72% position:50% align:center size:90%
+the confirm step now holds a route
+whose length is not the printed total.
+
+00:01:07.084 --> 00:01:11.378 line:72% position:50% align:center size:90%
+An automation approval cannot serve
+until two blind reads have signed it.
